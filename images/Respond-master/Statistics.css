@@ -1,0 +1,347 @@
+body {
+    padding-top: 70px;
+    height:5000px
+}
+
+
+/*************************** Start overriding Bootstrap *****/
+
+
+/* main navbar */
+
+.navbar {
+    min-height:70px
+}
+
+/*Active link*/
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+    background-color: #E41B17
+}
+
+/*Normal link*/
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #BBB;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    font-size: 16px
+         
+}
+
+/*Brand Name*/
+
+.navbar-inverse .navbar-brand {
+    color: #BBB;
+    line-height: 40px;
+    font-size: 30px
+}
+.navbar-inverse .navbar-brand span {
+    color: #E41B17;
+}
+
+/*Navbar toggle*/
+.navbar-toggle {
+    margin-top: 18px
+}
+
+/*Dropdown Menu*/
+
+.dropdown-menu {
+    background-color: #333;
+    border-top: 3px solid #E41B17;
+    min-width: 200px
+}
+
+.navbar-right .dropdown-menu {
+    right:auto;
+    left:0
+}
+
+.dropdown-menu > li > a {
+    color: #FFF;
+    padding: 6px 20px;
+    -webkit-transition: padding 0.5s ease;
+    -moz-transition: padding 0.5s ease;
+    -o-transition: padding 0.5s ease;
+    transition: padding 0.5s ease;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+    background-color: #E41B17;
+    color: #FFF;
+    padding-left:25px
+}
+
+.dropdown-menu .divider {
+    background-color: #871818
+}
+
+/* Start carousel */
+
+/*Carousel image */
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    width: 1349px;
+    height: 350px
+}
+
+/* Carousel Caption*/
+.carousel-caption {
+    bottom:70px;
+    background-color: rgba(3,3,3,.3);
+    padding-right: 20px;
+    padding-left:20px
+}
+
+.carousel-indicators {
+    bottom:0
+}
+
+.carousel-indicators li {
+    width:15px;
+    height:15px;
+    border: 1px solid #EEE
+}
+
+.carousel-indicators .active {
+    width:17px;
+    height:17px;
+    background-color: #E41B17;
+    
+}
+/* End carousel */
+
+/*Start section about */
+
+.about {
+    padding-top: 60px;
+    padding-bottom: 60px
+}
+
+.about .lead {
+    color: #888;
+    margin-top: 15px;
+    font-size: 25px
+    
+}
+.about h1 span {
+   color: #E41B17
+ 
+}
+/* End section about */
+
+/* Start section Features */
+
+.features {
+    background-color: #EEE;
+    padding-top:50px;
+    padding-bottom:50px
+}
+
+.features h1 {
+    margin-bottom:50px
+}
+
+.features .feat {
+    margin-bottom: 30px
+}
+
+.features .feat p {
+    line-height: 2em;
+}
+
+.features .feat span.glyphicon {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #666
+}
+/*End section Features */
+
+/* Start Testimonials section */
+
+.testimonials {
+    padding-top: 50px;
+    padding-bottom: 50px
+}
+
+.testimonials h1 {
+    font-weight: bold;
+    margin-bottom: 20px
+}
+
+.testimonials .lead {
+    line-height: 2em;
+    margin-bottom: 10px
+}
+
+.testimonials span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #E41B17
+}
+
+.testimonials .carousel-inner {
+    min-height: 120px
+}
+
+.testimonials .carousel-indicators {
+    position: static;
+    margin-left: auto;
+    width: 100%;
+    padding-top: 20px
+}
+
+.testimonials .carousel-indicators li {
+    text-indent: 0;
+    width: 80px;
+    height: 80px;
+    opacity: 0.4;
+    border: 3px solid #FFF;
+    border-radius: 50%;
+    overflow:hidden;
+    margin: 5px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.testimonials .carousel-indicators li.active {
+    width: 80px;
+    height: 80px;
+    opacity: 1;
+    background-color: none;
+    border: 3px solid #E41B17;    
+}
+
+.testimonials .carousel-indicators li img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* End Testimonials section */
+
+/* Start Price table section */
+
+.price_table {
+    background-color: #EEE;
+    padding-top: 40px;
+    padding-bottom: 40px
+}
+
+
+.price_table h1 {
+    font-weight: bold;
+    margin-bottom: 40px
+}
+
+.price_table .price_box {
+    background-color: #FFF;
+    padding: 10px;
+    border: 1px solid #DDD; 
+    margin-bottom: 15px
+}
+
+.price_table .price_box h2 {
+   margin: 5px 0 15px 
+}
+
+.price_table .price_box:hover p {
+    -webkit-transform: scale(1.1,1.1) rotate(360deg);
+    -moz-transform: scale(1.1,1.1) rotate(360deg);
+    -o-transform: scale(1.1,1.1) rotate(360deg);
+    transform: scale(1.1,1.1) rotate(360deg);
+    border: 2px solid #DFDFDF
+}
+
+.price_table .price_box p {
+    font-size: 35px;
+    font-weight: bold;
+    color: #666;
+    width: 100px;
+    height: 100px;
+    background-color: #F3F3F3;
+    border-radius: 50%;
+    line-height: 100px;
+    -webkit-transition-duration: 0.7s;
+    -moz-transition-duration: 0.7s;
+    -o-transition-duration: 0.7s;
+    transition-duration: 0.7s;
+    border: 2px solid #FFF;
+} 
+
+.price_table .price_box ul {
+    line-height: 250%;
+    font-size: 18px; 
+}
+.price_table .price_box a {
+    margin-bottom: 5px
+}
+
+/* End Price table section */
+
+/* Start Our Team section */
+
+.our_team {
+    background: url('../images/team.jpg') no-repeat center center fixed;
+    min-height: 600px
+}
+
+.our_team .team {
+    background: rgba(2,2,2,0.8);
+    color:#FFF;
+    min-height: 600px;
+    padding-top: 40px;
+    padding-bottom: 40px
+}
+
+.our_team .team h1 {
+    margin-bottom: 60px    
+}
+
+.our_team .team .person {
+    margin-bottom: 40px 
+}
+
+.our_team .team .person img {
+    max-width:200px;
+    max-height: 200px
+}
+/* End Our Team section */
+
+/* Start Subscribe Section */
+
+.subscribe {
+    padding-top: 40px;
+    padding-bottom: 70px;
+    background-color: #EEE
+}
+
+.subscribe h1 {
+    color: #888;
+    letter-spacing: 2px;
+    margin-bottom: 20px
+}
+
+.subscribe p {
+    margin-bottom: 30px;
+}
+
+.subscribe .form-control, .subscribe button {
+    border-radius: 0
+}
+
+.subscribe .form-control {
+    margin-right: -5px;
+    width: 300px 
+}
+
+/* End Subscribe Section */
+
+/* Start Statistics Section */
+
+
+/* End Statistics Section */

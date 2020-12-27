@@ -1,0 +1,485 @@
+body {
+    padding-top: 70px;
+}
+
+h1, h2, h3, h4, h5, .lead {font-family: 'Roboto', sans-serif}
+
+
+/*************************** Start overriding Bootstrap *****/
+
+/* main navbar */
+
+.navbar {min-height:70px}
+
+/*Normal link*/
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #BBB;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    font-size: 16px     
+}
+
+/*Brand Name*/
+
+.navbar-inverse .navbar-brand {color: #BBB; line-height: 40px; font-size: 30px}
+
+/*Dropdown Menu*/
+
+.dropdown-menu {background-color: #333;min-width: 200px}
+
+.navbar-right .dropdown-menu {right:auto; left:0}
+
+.dropdown-menu > li > a {
+	color: #FFF;
+	padding: 6px 20px;
+	-webkit-transition: padding 0.5s ease;
+    -moz-transition: padding 0.5s ease;
+    -o-transition: padding 0.5s ease;
+    transition: padding 0.5s ease;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {color: #FFF; padding-left:25px}
+
+.dropdown-menu .divider {background-color: #871818}
+
+/*Navbar toggle*/
+
+.navbar-toggle {margin-top: 18px}
+
+/* End Navbar Section */
+
+/* Start carousel */
+
+/*Carousel image */
+
+.carousel-inner > .item > img {width: 100%;	max-height: 500px}
+
+/* Carousel Caption*/
+
+.carousel-caption {
+    bottom:100px;
+    background-color: rgba(3,3,3,.3);
+    padding-right: 20px;
+    padding-left:20px
+}
+
+.carousel-indicators {bottom:0}
+
+.carousel-indicators li {width:15px; height:15px; border: 1px solid #EEE}
+
+.carousel-indicators .active {width:17px; height:17px}
+
+/* End carousel */
+
+/* Start Section Tool Box */
+
+.option-box {
+    position: fixed;
+    top: 100px;
+    left:0;
+    z-index: 9999
+}
+
+.option-box .color-option {
+    float: left;
+    background: #333;
+    color: #FFF;
+    padding: 10px;
+    width: 200px;
+    display:none
+}
+
+.option-box .color-option ul li {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background: #F00;
+    margin-right: 3px
+}
+
+.option-box .gear-check {padding: 5px; color: #FFF; cursor:pointer}
+
+/* End Section Tool Box */
+
+/*Start section about */
+
+.about .lead {color: #888; margin-top: 15px; font-size: 25px}
+
+/* End section about */
+
+/* Start section Features */
+
+.features {background-color: #EEE}
+
+.features .feat {margin-bottom: 30px}
+
+.features .feat h4 {font-weight: bold; font-size: 18px}
+
+.features .feat p {line-height: 2em}
+
+.features .feat span.glyphicon {font-size: 22px; margin-bottom: 10px; color: #666}
+
+/* End section Features */
+
+/* Start Testimonials section */
+
+.testimonials .lead {line-height: 2em; margin-bottom: 10px}
+
+.testimonials span {font-size: 18px; font-weight: bold}
+
+.testimonials .carousel-inner {min-height: 120px}
+
+.testimonials .carousel-indicators {
+    position: static;
+    margin-left: auto;
+    width: 100%;
+    padding-top: 20px
+}
+
+.testimonials .carousel-indicators li {
+    text-indent: 0;
+    width: 80px;
+    height: 80px;
+    opacity: 0.4;
+    border: 3px solid #FFF;
+    border-radius: 50%;
+    overflow:hidden;
+    margin: 5px;
+	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.testimonials .carousel-indicators li.active {
+    width: 80px;
+    height: 80px;
+    opacity: 1;
+    background-color: none;
+}
+
+.testimonials .carousel-indicators li img {max-width: 100%; max-height: 100%}
+
+/* End Testimonials section */
+
+/* Start Price table section */
+
+.price_table {background-color: #EEE}
+
+
+.price_table .price_box {
+    background-color: #FFF;
+    padding: 10px;
+    border: 1px solid #DDD; 
+    margin-bottom: 15px
+}
+
+.price_table .price_box h2 {margin: 5px 0 15px}
+
+.price_table .price_box:hover p {
+    -webkit-transform: scale(1.1,1.1) rotate(360deg);
+    -moz-transform: scale(1.1,1.1) rotate(360deg);
+    -o-transform: scale(1.1,1.1) rotate(360deg);
+    transform: scale(1.1,1.1) rotate(360deg);
+    border: 2px solid #DFDFDF
+}
+
+.price_table .price_box p {
+    font-size: 35px;
+    font-weight: bold;
+    color: #666;
+    width: 100px;
+    height: 100px;
+    background-color: #F3F3F3;
+    border-radius: 50%;
+    line-height: 100px;
+    border: 2px solid #FFF;
+	-webkit-transition-duration: 0.7s;
+    -moz-transition-duration: 0.7s;
+    -o-transition-duration: 0.7s;
+    transition-duration: 0.7s;
+} 
+
+.price_table .price_box ul {line-height: 250%; font-size: 18px}
+
+.price_table .price_box a {margin-bottom: 5px}
+
+/* End Price table section */
+
+/* Start Our Team section */
+
+.our_team {
+    background: url('../images/team.jpg') no-repeat center center fixed;
+    min-height: 600px
+}
+
+.our_team .team {
+    background: rgba(2,2,2,0.8);
+    color:#FFF;
+    min-height: 600px;
+}
+
+.our_team .team .person {margin-bottom: 40px}
+
+.our_team .team .person img {max-width:200px; max-height: 200px}
+
+/* End Our Team section */
+
+/* Start Subscribe Section */
+
+.subscribe {background-color: #EEE}
+
+.subscribe .h1 {color: #888; letter-spacing: 2px; margin-bottom: 20px}
+
+.subscribe p {margin-bottom: 30px}
+
+.subscribe .form-control, .subscribe button {border-radius: 0}
+
+.subscribe .form-control {margin-right: -5px; width: 300px}
+
+/* End Subscribe Section */
+
+/* Start Statistics Section */
+
+.statistics {
+    background: url('../images/stat.jpg') no-repeat center center fixed;
+    min-height:300px
+}
+
+.statistics .cover {
+    background-color: rgba(2,2,2,.8);
+    color: #B6B5B5;
+    width: 100%;
+    min-height: 300px;
+    padding-top: 40px;
+    padding-bottom: 70px
+}
+
+.statistics .stat-item {
+	margin-bottom: 30px;
+	 -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out		
+}
+
+.statistics .stat-item:hover {color: #FFF}
+
+.statistics .row p {font-weight: bold; font-size: 60px; margin-bottom: 0}
+
+.statistics .row span {font-size: 18px}
+/* End Statistics Section */
+
+
+/* Start OurSkills Section */
+
+
+.our-skills .skill-info h3 {margin-top: 0; font-weight: bold}
+
+.our-skills .progress {height: 36px}
+
+.our-skills .progress-bar {
+    line-height: 36px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+    text-indent: 10px;  
+}
+
+/* End OurSkills Section */
+
+/* Start Contact-us Section */
+
+.contact-us {
+    background: url('../images/contact-us.jpg') no-repeat fixed center center;
+    min-height: 300px;
+    color: #FFF
+}
+
+.contact-us .fields {
+    background: rgba(9, 9, 9, .6);
+    min-height: 300px;
+    color: #DDD
+}
+
+.contact-us .fields p {margin-bottom: 40px}
+
+.contact-us .fields textarea{height: 108px}
+
+.contact-us .fields input[type="text"],
+.contact-us .fields textarea {
+    background: rgba(82, 78, 78, .7);
+    color: #FFF;
+    border: none
+}
+/* End Contact-us Section */
+
+/*Start Our Clients Section */
+
+.our-clients {background-color: #EEE}
+
+.our-clients img {
+    width: 126px;
+    height: 28px;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    margin-top: 20px;
+    margin-bottom: 20px
+} 
+
+.our-clients img:hover {opacity: 1}
+
+/*End Our Clients Section */
+
+/*Start Footer Section */
+
+.footer {background-color: #111; color: #AAA; padding-top: 10px}
+
+.footer h3 {letter-spacing: 1px; margin: 30px 0 20px}
+
+.footer .three-columns {overflow: hidden}
+
+.footer .three-columns li {width:33.333%; float: left; padding: 10px 0}
+
+.footer .social-list {overflow: hidden; margin: 20px 0 10px}
+
+.footer .social-list li {
+    float: left;
+    margin-right: 4px;
+    opacity: .6;
+    filter: alpha(opacity=60)
+}
+
+.footer .social-list li:hover {opacity: 1}
+
+.footer .size {width: 150px; height: 100px}
+
+.footer .img-thumbnail {
+    background: rgba(0, 0, 0, .4);
+    border: 1px solid #444;
+    margin-bottom: 5px
+}
+
+.footer a {color: #AAA}
+
+.footer a:hover {color: #FFF}
+
+.footer .copyright {
+    background: #333;
+    color: #AAA;
+    padding: 15px 0;
+    margin-top: 30px;
+    font-size: 18px;    
+}
+
+/* End Footer Section */
+
+/* Start Section Loading */
+
+.loading-overlay {
+    background: #222;
+    color:#FFF;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999
+}
+
+.spinner {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    margin: 300px auto;
+  }
+  
+  .double-bounce1, .double-bounce2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #333;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+    animation: sk-bounce 2.0s infinite ease-in-out;
+  }
+  
+  .double-bounce2 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+  }
+  
+  @-webkit-keyframes sk-bounce {
+    0%, 100% { -webkit-transform: scale(0.0) }
+    50% { -webkit-transform: scale(1.0) }
+  }
+  
+  @keyframes sk-bounce {
+    0%, 100% { 
+      transform: scale(0.0);
+      -webkit-transform: scale(0.0);
+    } 50% { 
+      transform: scale(1.0);
+      -webkit-transform: scale(1.0);
+    }
+  }
+
+/* End Section Loading */
+
+/* Start Scroll to top */
+
+#scroll-top {
+    width: 50px;
+    height: 40px;
+    color: #DDD;
+    background: #272727;
+    text-align: center;
+    position:fixed;
+    right: 15px;
+    bottom: 10px;
+    z-index: 999999;
+    display: none;
+	cursor: pointer
+}
+
+#scroll-top:hover {background: #444}
+
+/* End Scroll to top */
+
+/* Start Our Grouping System */
+
+.our_team, .statistics, .contact-us {
+	-webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+}
+
+.features .h1,
+.testimonials .h1,
+.price_table .h1,
+.our_team .team .h1,
+.statistics .h1,
+.our-skills .h1 {margin-bottom:50px}
+
+.our-clients img,
+.footer .social-list li {
+	-webkit-transition: padding 0.5s ease;
+    -moz-transition: padding 0.5s ease;
+    -o-transition: padding 0.5s ease;
+    transition: padding 0.5s ease;
+}
+
+.about, .features,
+.testimonials, .price_table,
+.our_team .team, .subscribe,
+.our-skills, .contact-us .fields,
+.our-clients {padding-top: 50px; padding-bottom: 50px}
+
+/* End Our Grouping System */
